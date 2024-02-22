@@ -90,10 +90,10 @@ def display_pdf_content(url):
 
 
 # Function to summarize content from a given PDF URL
-def summarize_from_pdf(url, instruction="Summarize the pdf to a 5-year-old child in English"):
+def summarize_from_pdf(url):
     pdf_text = display_pdf_content(url)
     prompt = f"""
-    {instruction}:
+    Summarize the following text in 3 to 5 sentences using simple language that anyone can understand in English:
     {pdf_text}
     """
     response = get_completion(prompt)
@@ -113,9 +113,9 @@ def convert_history(conversation_history):
 def generate_answer(question, article_text, conversation_history):
     conversation_history = convert_history(conversation_history)
     prompt = f"""
-    Previous conversation: {conversation_history}
-    Answer the question using conversation history, given article, and your common knowledge.
-    Article: {article_text}
+    Conversation history: {conversation_history}
+    Answer the question using the conversation history, given article, and your common knowledge.
+    Given article: {article_text}
     Question: {question}
     Answer:
     """
