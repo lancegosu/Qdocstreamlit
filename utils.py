@@ -11,7 +11,7 @@ client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
 
 # Function to get completion using OpenAI's Chat API
-def get_completion(prompt, model="gpt-3.5-turbo"):
+def get_completion(prompt, model="gpt-3.5-turbo-1106"):
     chat_completion = client.chat.completions.create(
         messages=[
             {"role": "user", "content": prompt},
