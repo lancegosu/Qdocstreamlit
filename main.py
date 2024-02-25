@@ -4,6 +4,14 @@ from utils import summarize_from_url, get_article_text, summarize_from_pdf, gene
 st.set_page_config(page_title="Qdoc")
 st.title("📄 Qdoc")
 
+st.sidebar.write('[My Portfolio](https://lancen.streamlit.app/)')
+st.sidebar.caption("Made by [Lance Nguyen](https://www.linkedin.com/in/lancedin/)")
+
+with st.sidebar.expander('**My Other Apps**'):
+    st.caption('[LLM Optimization with RAG](https://lcrags.streamlit.app/)')
+    st.caption('[SpotOn](https://spoton.streamlit.app/)')
+    st.caption('[CooPA](https://coopas.streamlit.app/)')
+
 st.sidebar.info(
     """
     Info: Qdoc utilizes a large language model to summarize articles and PDFs from a given URL. Additionally, it can answer questions related to the article using the conversation history, the article's content, and common knowledge.
