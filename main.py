@@ -9,7 +9,7 @@ st.sidebar.caption("Made by [Lance Nguyen](https://www.linkedin.com/in/lancedin/
 
 st.sidebar.info(
     """
-    Info: Qdoc utilizes a large language model to summarize articles and PDFs from a given URL. Additionally, it can answer questions related to the article using the conversation history, the article's content, and common knowledge.
+    Info: Qdoc utilizes a large language model to summarize articles and PDFs from a given URL. It can also answer questions regarding the article using the history of the conversation, the article's content, and common knowledge.
     Start by entering an article URL to summarize.
     """
 )
