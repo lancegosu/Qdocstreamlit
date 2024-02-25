@@ -13,3 +13,5 @@ Qdoc is an article assistant that utilizes a LLM to summarize articles and PDFs 
 **APIs**: OpenAI API
 
 **Libraries**: OpenAI, requests, BeautifulSoup, PyMuPDF
+
+### Enjoy using Qdoc, your intelligent companion for exploring articles effortlessly!
