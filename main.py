@@ -6,7 +6,7 @@ st.title("📄 Qdoc")
 
 st.sidebar.info(
     """
-    Info: Qdoc is a web application that utilizes a Large Language Model (LLM) to summarize articles from a given URL or PDF. Additionally, it can answer questions related to the article using the conversation history, the article's content, and common knowledge.
+    Info: Qdoc utilizes a Large Language Model (LLM) to summarize articles and PDFs from a given URL. Additionally, it can answer questions related to the article using the conversation history, the article's content, and common knowledge.
     """
 )
 
