@@ -22,7 +22,7 @@ with st.sidebar.expander('**My Other Apps**'):
 conversation_history = []
 
 # Summary Section
-user_input_url = st.text_input("Enter Article URL to summarize:", key="url")
+user_input_url = st.text_input("Enter article URL to summarize:", key="url")
 if user_input_url:
     if user_input_url.lower().endswith(".pdf"):
         st.session_state.summary = summarize_from_pdf(user_input_url)
