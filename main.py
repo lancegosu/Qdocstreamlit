@@ -1,7 +1,7 @@
 import streamlit as st
 from utils import summarize_from_url, get_article_text, summarize_from_pdf, generate_answer
 
-st.set_page_config(page_title="Qdoc")
+st.set_page_config(page_title="Qdoc", layout='wide')
 st.title("📄 Qdoc")
 
 st.sidebar.write('[My Portfolio](https://lancen.streamlit.app/)')
