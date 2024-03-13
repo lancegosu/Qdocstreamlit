@@ -2,7 +2,7 @@ import streamlit as st
 from utils import summarize_from_url, get_article_text, summarize_from_pdf, generate_answer
 
 st.set_page_config(page_title="Qdoc", layout='wide')
-st.title("📄 Qdoc")
+st.title("📄 Qdoc (Article Assistant)")
 
 st.sidebar.write('[My Portfolio](https://lancen.streamlit.app/)')
 st.sidebar.caption("Made by [Lance Nguyen](https://www.linkedin.com/in/lancedin/)")
@@ -16,8 +16,8 @@ st.sidebar.info(
 
 with st.sidebar.expander('**My Other Apps**'):
     st.caption('[LLM Optimization with RAG](https://lcrags.streamlit.app/)')
-    st.caption('[SpotOn](https://spoton.streamlit.app/)')
-    st.caption('[CooPA](https://coopas.streamlit.app/)')
+    st.caption('[SpotOn (Review Analysis)](https://spoton.streamlit.app/)')
+    st.caption('[CooPA (Search Chatbot)](https://coopas.streamlit.app/)')
 
 conversation_history = []
 
